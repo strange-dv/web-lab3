@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeaHouse landing page</title>
+  <style>
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      /* Adjust as needed */
+    }
+
+    .accordion-item {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .accordion-item-header {
+      background-color: #f1f1f1;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .accordion-item-content {
+      display: none;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <div id="header">
+    <nav>
+      <ul>
+        <li><a href="#main-screen">Home</a></li>
+        <li><a href="#choose-us">Why Choose Us</a></li>
+        <li><a href="#trust-us">Why Trust Us</a></li>
+        <li><a href="#feedbacks">Feedbacks</a></li>
+        <li><a href="#qa">Q&A</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main Screen Section -->
+  <div id="main-screen">
+    <h1>Welcome to Our Website</h1>
+  </div>
+
+  <!-- Why Choose Us Section -->
+  <div id="choose-us">
+    <h2>Why Choose Us</h2>
+  </div>
+
+  <!-- Why Trust Us Section -->
+  <div id="trust-us">
+    <h2>Why Trust Us</h2>
+  </div>
+
+  <!-- Feedbacks Section -->
+  <div id="feedbacks">
+    <h2>Customer Feedbacks</h2>
+    <div>
+      <p>Customer feedback 1</p>
+      <p>Customer feedback 2</p>
+    </div>
+  </div>
+
+  <div id="qa" class="accordion">
+    <h2>Questions</h2>
+    <!-- Q&A Item 1 -->
+    <div class="accordion-item">
+      <div class="accordion-item-header" onclick="toggleAccordion('qa-item-1')">Q:</div>
+      <div class="accordion-item-content" id="qa-item-1">
+        <p><strong>A:</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div id="footer">
+    <p>Footer</p>
+  </div>
+
+  <script>
+    function toggleAccordion(itemId) {
+      var itemContent = document.getElementById(itemId);
+
+      if (itemContent.style.display === "block") {
+        itemContent.style.display = "none";
+      } else {
+        itemContent.style.display = "block";
+      }
+    }
+  </script>
+</body>
+
+</html>
