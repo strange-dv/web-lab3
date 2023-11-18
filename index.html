@@ -10,7 +10,6 @@
       display: flex;
       flex-direction: column;
       max-width: 600px;
-      /* Adjust as needed */
     }
 
     .accordion-item {
@@ -29,6 +28,33 @@
       display: none;
       padding: 10px;
     }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #main-screen img,
+    #choose-us img,
+    #trust-us img {
+      width: 400px;
+      height: 300px;
+    }
+
+    #trust-points img {
+      width: 20px;
+      height: 20px;
+    }
+
+    #qa img {
+      width: 100%;
+      height: auto;
+    }
+
+    #footer img {
+      width: 100px;
+      height: 100px;
+    }
   </style>
 </head>
 
@@ -36,7 +62,7 @@
 
   <!-- Header Section -->
   <div id="header">
-    <img width="10%" height="10%" src="images/logo.webp" alt="TeaHouse">
+    <img src="images/logo.webp" alt="TeaHouse">
     <nav>
       <ul>
         <li><a href="#main-screen">Home</a></li>
@@ -56,7 +82,7 @@
     <div>
       <p>Купити</p>
     </div>
-    <img width="50%" height="50%" src="images/main.webp" alt="Main image">
+    <img src="images/main.webp" alt="Main image">
   </div>
 
   <!-- Why Choose Us Section -->
@@ -98,7 +124,7 @@
         </div>
       </div>
     </div>
-    <img width="50%" height="50%" src="images/graphic.webp" alt="Graphic">
+    <img src="images/graphic.webp" alt="Graphic">
   </div>
 
   <!-- Why Trust Us Section -->
@@ -106,22 +132,22 @@
     <h2>Чому клієнти довіряють нам</h2>
     <p>Ми покращуємо сервіс, розвиваємо виробництво та відкриваємо нові магазини. Команда та зростання компанії у нас
       важливі нарівні з продуктом.</p>
-    <img width="50%" height="50%" src="images/elephant.webp" alt="elephant">
-    <div>
+    <img src="images/elephant.webp" alt="elephant">
+    <div id="trust-points">
       <div>
-        <img width="5%" height="5%" src="images/tick-circle.svg" alt="">
+        <img src="images/tick-circle.svg" alt="">
         Text
       </div>
       <div>
-        <img width="5%" height="5%" src="images/tick-circle.svg" alt="">
+        <img src="images/tick-circle.svg" alt="">
         Text
       </div>
       <div>
-        <img width="5%" height="5%" src="images/tick-circle.svg" alt="">
+        <img src="images/tick-circle.svg" alt="">
         Text
       </div>
       <div>
-        <img width="5%" height="5%" src="images/tick-circle.svg" alt="">
+        <img src="images/tick-circle.svg" alt="">
         Text
       </div>
     </div>
@@ -153,7 +179,7 @@
 
   <!-- Q&A Section -->
   <div id="qa" class="accordion">
-    <img width="100%" height="100%" src="images/tea.webp" alt="Tea">
+    <img src="images/tea.webp" alt="Tea">
     <h2>Питання, які ставлять часто</h2>
     <div class="accordion-item">
       <div class="accordion-item-header" onclick="toggleAccordion('qa-item-1')">Lorem ipsum dolar sit amet consectetur
@@ -187,7 +213,7 @@
       <p>Amet minim mollit non deserunt
         ullamco est sit aliqua dolor do amet
         sintelit officia consequat</p>
-      <img width="10%" height="10%" src="images/logo.webp" alt="TeaHouse">
+      <img src="images/logo.webp" alt="TeaHouse">
     </div>
     <div>
       <a href="">Ресурс</a>
@@ -215,10 +241,10 @@
 
     <div>
       Зв’яжіться з нами
-      <a href=""><img width="5%" height="5%" src="images/placeholder.webp" alt=""></a>
-      <a href=""><img width="5%" height="5%" src="images/placeholder.webp" alt=""></a>
-      <a href=""><img width="5%" height="5%" src="images/placeholder.webp" alt=""></a>
-      <a href=""><img width="5%" height="5%" src="images/placeholder.webp" alt=""></a>
+      <a href=""><img src="images/placeholder.webp" alt=""></a>
+      <a href=""><img src="images/placeholder.webp" alt=""></a>
+      <a href=""><img src="images/placeholder.webp" alt=""></a>
+      <a href=""><img src="images/placeholder.webp" alt=""></a>
     </div>
   </div>
 
