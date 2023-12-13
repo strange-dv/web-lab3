@@ -1,271 +1,197 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WEB Programming Lab2.">
-  <title>TeaHouse landing page</title>
-  <style>
-    .accordion {
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-    }
-
-    .accordion-item {
-      border: 1px solid #ccc;
-      margin-bottom: 10px;
-    }
-
-    .accordion-item-header {
-      background-color: #f1f1f1;
-      padding: 10px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .accordion-item-content {
-      display: none;
-      padding: 10px;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    #main-screen img,
-    #choose-us img,
-    #trust-us img {
-      width: 400px;
-      height: 300px;
-    }
-
-    #qa img {
-      width: 400px;
-      height: 400px;
-    }
-
-    #trust-points img {
-      width: 20px;
-      height: 20px;
-    }
-
-    #footer img,
-    #header img {
-      width: 10%;
-      height: auto;
-    }
-
-    #footer img.contact-us {
-      width: 5%;
-      height: auto;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles/globals.css" />
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body>
-
-  <!-- Header Section -->
-  <div id="header">
-    <img src="images/logo.webp" alt="TeaHouse">
-    <nav>
-      <ul>
-        <li><a href="#main-screen">Home</a></li>
-        <li><a href="#choose-us">Why Choose Us</a></li>
-        <li><a href="#trust-us">Why Trust Us</a></li>
-        <li><a href="#feedbacks">Feedbacks</a></li>
-        <li><a href="#qa">Q&A</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <!-- Main Screen Section -->
-  <div id="main-screen">
-    <h1>Ми - TEAHOUSE</h1>
-    <h1>Продаємо чай з 2006 року.</h1>
-    <p>Привозимо чай безпосередньо з плантацій</p>
-    <div>
-      <p>Купити</p>
-    </div>
-    <img src="images/main.webp" alt="Main image">
-  </div>
-
-  <!-- Why Choose Us Section -->
-  <div id="choose-us">
-    <h2>Чому варто купувати наш чай</h2>
-    <p>Ми в TEAHOUSE закохані у чай, але служимо не йому. Ми служимо людям і всьому людському. Розвиток, цікавість,
-      відкритість, краса – ось шлях, яким ми йдемо.</p>
-    <div>
-      <div>
-        <div>
-          <p>Клієнти</p>
+  <div class="landing-page">
+    <div class="div">
+      <img class="image-2" src="img/logo.webp" />
+      <header class="header">
+        <div class="nav-link-grp">
+          <div class="div-2">
+            <div class="text-wrapper-5">Link 1</div>
+          </div>
+          <div class="nav-link-comp">
+            <div class="text-wrapper-5">Link 2</div>
+          </div>
+          <div class="nav-link-comp">
+            <div class="text-wrapper-5">Link 3</div>
+          </div>
+          <div class="nav-link-comp">
+            <div class="text-wrapper-5">Link 4</div>
+          </div>
+          <div class="text-wrapper-5">Link 5</div>
         </div>
-        <div>
-          <p>12К</p>
+      </header>
+      <div class="overlap-2">
+        <div class="rectangle"></div>
+        <div class="banner-heading">
+          <div class="element">
+            <p class="text-wrapper-3">Ми – TEAHOUSE. Продаємо чай з 2006 року.</p>
+            <p class="text-wrapper-4">Привозимо чай безпосередньо з плантацій</p>
+          </div>
+          <div class="button-component"><button class="button">Купити</button></div>
         </div>
+        <img class="img" src="img/main.webp" />
       </div>
-      <div>
-        <div>
-          <p>Приріст</p>
-        </div>
-        <div>
-          <p>55%</p>
-        </div>
+      <div class="heading-grp">
+        <p class="text-wrapper-19">Чому варто купувати наш чай</p>
+        <p class="text-wrapper-20">
+          Ми в TEAHOUSE закохані у чай, але служимо не йому. Ми служимо людям і всьому людському. Розвиток,
+          цікавість,
+          відкритість, краса – ось шлях, яким ми йдемо.
+        </p>
       </div>
-      <div>
-        <div>
-          <p>Магазини</p>
+      <div class="frame-3">
+        <div class="div-2">
+          <div class="text-wrapper-21">Клієнти</div>
+          <div class="text-wrapper-22">12K</div>
         </div>
-        <div>
-          <p>5k</p>
+        <div class="divider-line"></div>
+        <div class="div-2">
+          <div class="text-wrapper-21">Приріст</div>
+          <div class="text-wrapper-22">55%</div>
         </div>
-      </div>
-      <div>
-        <div>
-          <p>Позитивні відгуки</p>
+        <div class="divider-line"></div>
+        <div class="div-2">
+          <div class="text-wrapper-21">Магазини</div>
+          <div class="text-wrapper-22">5k</div>
         </div>
-        <div>
-          <p>80%</p>
+        <div class="divider-line"></div>
+        <div class="div-2">
+          <div class="text-wrapper-21">Позитивні відгуки</div>
+          <div class="text-wrapper-22">80%</div>
         </div>
       </div>
-    </div>
-    <img src="images/graphic.webp" alt="Graphic">
-  </div>
-
-  <!-- Why Trust Us Section -->
-  <div id="trust-us">
-    <h2>Чому клієнти довіряють нам</h2>
-    <p>Ми покращуємо сервіс, розвиваємо виробництво та відкриваємо нові магазини. Команда та зростання компанії у нас
-      важливі нарівні з продуктом.</p>
-    <img src="images/elephant.webp" alt="elephant">
-    <div id="trust-points">
-      <div>
-        <img src="images/tick-circle.svg" alt="">
-        Text
+      <img class="image-3" src="img/graphic.webp" />
+      <p class="text-wrapper-6">
+        Ми покращуємо сервіс, розвиваємо виробництво та відкриваємо нові магазини. Команда та зростання компанії
+        у нас
+        важливі нарівні з продуктом.
+      </p>
+      <div class="text-wrapper-8">Чому клієнти довіряють нам</div>
+      <img class="image-4" src="img/elephant.webp" />
+      <div class="group">
+        <div class="button-wrapper"><button class="button">Купити</button></div>
+        <div class="b">
+          <img class="vuesax-linear-tick" src="img/tick-circle.svg" />
+          <div class="text-wrapper-7">Пункт 1</div>
+        </div>
+        <div class="b-2">
+          <img class="vuesax-linear-tick" src="img/tick-circle.svg" />
+          <div class="text-wrapper-7">Пункт 2</div>
+        </div>
+        <div class="b-3">
+          <img class="vuesax-linear-tick" src="img/tick-circle.svg" />
+          <div class="text-wrapper-7">Пункт 3</div>
+        </div>
+        <div class="b-4">
+          <img class="vuesax-linear-tick" src="img/tick-circle.svg" />
+          <div class="text-wrapper-7">Пункт 4</div>
+        </div>
       </div>
-      <div>
-        <img src="images/tick-circle.svg" alt="">
-        Text
+      <div class="text-wrapper-9">Наші щасливі клієнти</div>
+      <div class="reviews-card">
+        <div class="overlap-group-2">
+          <p class="text-wrapper-10">
+            Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae ligula sed urna sit sagittis
+            interdum a.
+            Blandit mattis mattis lobortis orci. Facilisis dui sagittis tempor egestas pellentesque eu
+            maecenas. Risus
+            lectus nisl.
+          </p>
+          <div class="review-details">
+            <div class="text-wrapper-11">Ім’я прізвище</div>
+            <div class="text-wrapper-12">Клієнт</div>
+          </div>
+        </div>
       </div>
-      <div>
-        <img src="images/tick-circle.svg" alt="">
-        Text
+      <div class="overlap-wrapper">
+        <div class="overlap-group-2">
+          <p class="text-wrapper-10">
+            Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae ligula sed urna sit sagittis
+            interdum a.
+            Blandit mattis mattis lobortis orci. Facilisis dui sagittis tempor egestas pellentesque eu
+            maecenas. Risus
+            lectus nisl.
+          </p>
+          <div class="review-details-2">
+            <div class="text-wrapper-11">Ім’я Прізвище</div>
+            <div class="text-wrapper-12">Клієнт</div>
+          </div>
+        </div>
       </div>
-      <div>
-        <img src="images/tick-circle.svg" alt="">
-        Text
+      <div class="overlap">
+        <div class="text-wrapper-2">Питання, які ставлять часто</div>
+        <div class="overlap-group">
+          <div class="content-grp">
+            <div class="frame">
+              <p class="how-do-i-pay-for-the">Lorem ipsum dolar sit amet consectetur</p>
+              <img class="minus" src="img/minus.svg" />
+            </div>
+            <p class="text-wrapper">
+              Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum.
+              Gravida arcu
+              aliquet rutrum erat varius. Tellus felis sed pretium in egestas.
+            </p>
+          </div>
+          <div class="tab-wrapper">
+            <div class="tab">
+              <p class="p">Lorem ipsum dolar sit amet consectetur</p>
+              <img class="plus" src="img/plus.svg" />
+            </div>
+          </div>
+          <div class="div-wrapper">
+            <div class="tab">
+              <p class="p">Lorem ipsum dolar sit amet consectetur</p>
+              <img class="plus" src="img/plus.svg" />
+            </div>
+          </div>
+          <img class="image" src="img/tea.webp" />
+        </div>
       </div>
-    </div>
-    <div>
-      <p>Купити</p>
-    </div>
-  </div>
-
-  <!-- Feedbacks Section -->
-  <div id="feedbacks">
-    <h2>Наші щасливі клієнти</h2>
-    <div>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae ligula sed urna sit sagittis interdum a.
-          Blandit mattis mattis lobortis orci. Facilisis dui sagittis tempor egestas pellentesque eu maecenas. Risus
-          lectus nisl.</p>
-        <strong>Ім’я Прізвище</strong>
-        <p>Клієнт</p>
+      <div class="group-2">
+        <div class="text-wrapper-13">Ресурс</div>
+        <div class="text-wrapper-14">Link here</div>
+        <div class="text-wrapper-15">Link here</div>
+        <div class="text-wrapper-16">Link here</div>
+        <div class="text-wrapper-17">Link here</div>
       </div>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae ligula sed urna sit sagittis interdum a.
-          Blandit mattis mattis lobortis orci. Facilisis dui sagittis tempor egestas pellentesque eu maecenas. Risus
-          lectus nisl.</p>
-        <strong>Ім’я Прізвище</strong>
-        <p>Клієнт</p>
+      <div class="group-3">
+        <div class="text-wrapper-13">Ресурс</div>
+        <div class="text-wrapper-14">Link here</div>
+        <div class="text-wrapper-15">Link here</div>
+        <div class="text-wrapper-16">Link here</div>
+        <div class="text-wrapper-17">Link here</div>
       </div>
-    </div>
-  </div>
-
-  <!-- Q&A Section -->
-  <div id="qa" class="accordion">
-    <img src="images/tea.webp" alt="Tea">
-    <h2>Питання, які ставлять часто</h2>
-    <div class="accordion-item">
-      <div class="accordion-item-header" onclick="toggleAccordion('qa-item-1')">Lorem ipsum dolar sit amet consectetur
+      <div class="group-4">
+        <div class="text-wrapper-13">Ресурс</div>
+        <div class="text-wrapper-14">Link here</div>
+        <div class="text-wrapper-15">Link here</div>
+        <div class="text-wrapper-16">Link here</div>
+        <div class="text-wrapper-17">Link here</div>
       </div>
-      <div class="accordion-item-content" id="qa-item-1">
-        <p><strong>Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum. Gravida arcu
-            aliquet rutrum erat varius. Tellus felis sed pretium in egestas. </strong></p>
+      <div class="text-wrapper-18">Зв’яжіться з нами</div>
+      <img class="image-5" src="img/logo.webp" />
+      <div class="amet-minim-mollit-wrapper">
+        <p class="amet-minim-mollit">
+          Amet minim mollit non deserunt<br />ullamco est sit aliqua dolor do amet<br />sintelit officia
+          consequat
+        </p>
       </div>
-    </div>
-    <div class="accordion-item">
-      <div class="accordion-item-header" onclick="toggleAccordion('qa-item-2')">Lorem ipsum dolar sit amet consectetur
+      <div class="frame-2">
+        <div class="social-link"></div>
+        <div class="social-link"></div>
+        <div class="social-link"></div>
+        <div class="social-link"></div>
       </div>
-      <div class="accordion-item-content" id="qa-item-2">
-        <p><strong>Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum. Gravida arcu
-            aliquet rutrum erat varius. Tellus felis sed pretium in egestas. </strong></p>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <div class="accordion-item-header" onclick="toggleAccordion('qa-item-3')">Lorem ipsum dolar sit amet consectetur
-      </div>
-      <div class="accordion-item-content" id="qa-item-3">
-        <p><strong>Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum. Gravida arcu
-            aliquet rutrum erat varius. Tellus felis sed pretium in egestas. </strong></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer Section -->
-  <div id="footer">
-    <div>
-      <p>Amet minim mollit non deserunt
-        ullamco est sit aliqua dolor do amet
-        sintelit officia consequat</p>
-      <img src="images/logo.webp" alt="TeaHouse">
-    </div>
-    <div>
-      <a href="https://twitter.com/">Ресурс</a>
-      <a href="https://twitter.com/">Link here</a>
-      <a href="https://twitter.com/">Link here</a>
-      <a href="https://twitter.com/">Link here</a>
-      <a href="https://twitter.com/">Link here</a>
-    </div>
-
-    <div>
-      <a href="https://twitter.com/">Ресурс</a>
-      <a href="https://twitter.com/">Link here</a>
-      <a href="https://twitter.com/">Link here</a>
-      <a href="https://twitter.com/">Link here</a>
-      <a href="https://twitter.com/">Link here</a>
-    </div>
-
-    <div>
-      <a href="https://twitter.com/">Ресурс</a>
-      <a href="https://twitter.com/">Link here</a>
-      <a href="https://twitter.com/">Link here</a>
-      <a href="https://twitter.com/">Link here</a>
-      <a href="https://twitter.com/">Link here</a>
-    </div>
-
-    <div>
-      Зв’яжіться з нами
-      <a href="https://twitter.com/" aria-label="Social"><img class="contact-us" src="images/placeholder.webp" alt=""></a>
-      <a href="https://twitter.com/" aria-label="Social"><img class="contact-us" src="images/placeholder.webp" alt=""></a>
-      <a href="https://twitter.com/" aria-label="Social"><img class="contact-us" src="images/placeholder.webp" alt=""></a>
-      <a href="https://twitter.com/" aria-label="Social"><img class="contact-us" src="images/placeholder.webp" alt=""></a>
     </div>
   </div>
-
-  <script>
-    function toggleAccordion(itemId) {
-      var itemContent = document.getElementById(itemId);
-
-      if (itemContent.style.display === "block") {
-        itemContent.style.display = "none";
-      } else {
-        itemContent.style.display = "block";
-      }
-    }
-  </script>
 </body>
 
 </html>
