@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="styles/globals.css" />
   <link rel="stylesheet" href="styles/style.css" />
+  <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -129,68 +130,81 @@
       <div class="overlap">
         <div class="text-wrapper-2">Питання, які ставлять часто</div>
         <div class="overlap-group">
-          <div class="content-grp">
-            <div class="frame">
-              <p class="how-do-i-pay-for-the">Lorem ipsum dolar sit amet consectetur</p>
-              <img class="minus" src="img/minus.svg" />
+          <div class="questions">
+            <div class="tab-wrapper">
+              <div class="tab" onclick="toggleAccordion('qa-item-1', 'qa-item-img-1')">
+                <p class="p">Lorem ipsum dolar sit amet consectetur</p>
+                <img class="plus" id="qa-item-img-1" src="img/minus.svg" />
+              </div>
+              <p class="text-wrapper" id="qa-item-1">
+                Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum.
+                Gravida arcu
+                aliquet rutrum erat varius. Tellus felis sed pretium in egestas.
+              </p>
             </div>
-            <p class="text-wrapper">
-              Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum.
-              Gravida arcu
-              aliquet rutrum erat varius. Tellus felis sed pretium in egestas.
-            </p>
-          </div>
-          <div class="tab-wrapper">
-            <div class="tab">
-              <p class="p">Lorem ipsum dolar sit amet consectetur</p>
-              <img class="plus" src="img/plus.svg" />
+            <div class="tab-wrapper">
+              <div class="tab" onclick="toggleAccordion('qa-item-2', 'qa-item-img-2')">
+                <p class="p">Lorem ipsum dolar sit amet consectetur</p>
+                <img class="plus" id="qa-item-img-2" src="img/plus.svg" />
+              </div>
+              <p class="text-wrapper" id="qa-item-2" style="display:none;">
+                Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum.
+                Gravida arcu
+                aliquet rutrum erat varius. Tellus felis sed pretium in egestas.
+              </p>
+            </div>
+            <div class="tab-wrapper">
+              <div class="tab" onclick="toggleAccordion('qa-item-3', 'qa-item-img-3')">
+                <p class="p">Lorem ipsum dolar sit amet consectetur</p>
+                <img class="plus" id="qa-item-img-3" src="img/plus.svg" />
+              </div>
+              <p class="text-wrapper" id="qa-item-3" style="display:none;">
+                Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum.
+                Gravida arcu
+                aliquet rutrum erat varius. Tellus felis sed pretium in egestas.
+              </p>
             </div>
           </div>
-          <div class="div-wrapper">
-            <div class="tab">
-              <p class="p">Lorem ipsum dolar sit amet consectetur</p>
-              <img class="plus" src="img/plus.svg" />
-            </div>
-          </div>
-          <img class="image" src="img/tea.webp" />
         </div>
-      </div>
-      <div class="group-2">
-        <div class="text-wrapper-13">Ресурс</div>
-        <div class="text-wrapper-14">Link here</div>
-        <div class="text-wrapper-15">Link here</div>
-        <div class="text-wrapper-16">Link here</div>
-        <div class="text-wrapper-17">Link here</div>
-      </div>
-      <div class="group-3">
-        <div class="text-wrapper-13">Ресурс</div>
-        <div class="text-wrapper-14">Link here</div>
-        <div class="text-wrapper-15">Link here</div>
-        <div class="text-wrapper-16">Link here</div>
-        <div class="text-wrapper-17">Link here</div>
-      </div>
-      <div class="group-4">
-        <div class="text-wrapper-13">Ресурс</div>
-        <div class="text-wrapper-14">Link here</div>
-        <div class="text-wrapper-15">Link here</div>
-        <div class="text-wrapper-16">Link here</div>
-        <div class="text-wrapper-17">Link here</div>
-      </div>
-      <div class="text-wrapper-18">Зв’яжіться з нами</div>
-      <img class="image-5" src="img/logo.webp" />
-      <div class="amet-minim-mollit-wrapper">
-        <p class="amet-minim-mollit">
-          Amet minim mollit non deserunt<br />ullamco est sit aliqua dolor do amet<br />sintelit officia
-          consequat
-        </p>
-      </div>
-      <div class="frame-2">
-        <div class="social-link"></div>
-        <div class="social-link"></div>
-        <div class="social-link"></div>
-        <div class="social-link"></div>
+        <img class="image" src="img/tea.webp" />
       </div>
     </div>
+    <div class="group-2">
+      <div class="text-wrapper-13">Ресурс</div>
+      <div class="text-wrapper-14">Link here</div>
+      <div class="text-wrapper-15">Link here</div>
+      <div class="text-wrapper-16">Link here</div>
+      <div class="text-wrapper-17">Link here</div>
+    </div>
+    <div class="group-3">
+      <div class="text-wrapper-13">Ресурс</div>
+      <div class="text-wrapper-14">Link here</div>
+      <div class="text-wrapper-15">Link here</div>
+      <div class="text-wrapper-16">Link here</div>
+      <div class="text-wrapper-17">Link here</div>
+    </div>
+    <div class="group-4">
+      <div class="text-wrapper-13">Ресурс</div>
+      <div class="text-wrapper-14">Link here</div>
+      <div class="text-wrapper-15">Link here</div>
+      <div class="text-wrapper-16">Link here</div>
+      <div class="text-wrapper-17">Link here</div>
+    </div>
+    <div class="text-wrapper-18">Зв’яжіться з нами</div>
+    <img class="image-5" src="img/logo.webp" />
+    <div class="amet-minim-mollit-wrapper">
+      <p class="amet-minim-mollit">
+        Amet minim mollit non deserunt<br />ullamco est sit aliqua dolor do amet<br />sintelit officia
+        consequat
+      </p>
+    </div>
+    <div class="frame-2">
+      <div class="social-link"></div>
+      <div class="social-link"></div>
+      <div class="social-link"></div>
+      <div class="social-link"></div>
+    </div>
+  </div>
   </div>
 </body>
 
